@@ -106,14 +106,12 @@
                 </div>
 
                 <h4 class="h4 mb-3">Color Codes</h4>
-                <ul class="list-unstyled list-line mb-5">
-              <li>    <btn class="colorbtn"></btn>   #E99AA8</li>
-                  <li>#E99AA8</li>
-                  <btn class="colorbtn"></btn>
-                  <li>#3C3734</li>
-                  <li>#41BFF1</li>
-                  <li>#3180AC</li>
-                  <li>#80CE71</li>
+                <ul class="list-unstyled mb-5">
+                  <div class="colorli"><button class="colorbtn" style="background-color: #E99AA8;" disabled></button><li>#E99AA8</li></div>
+                  <div class="colorli"><button class="colorbtn" style="background-color: #3C3734;" disabled></button><li>#3C3734</li></div>
+                  <div class="colorli"><button class="colorbtn" style="background-color: #41BFF1;" disabled></button><li>#41BFF1</li></div>
+                  <div class="colorli"><button class="colorbtn" style="background-color: #3180AC;" disabled></button><li>#3180AC</li></div>
+                  <div class="colorli"><button class="colorbtn" style="background-color: #80CE71;" disabled></button><li>#80CE71</li></div>
                 </ul>
 
                 <p><a href="#" class="readmore">View Instagram Post</a></p>
@@ -173,9 +171,23 @@
 </html>
 
 <style>
-.colorbtn {
-border-radius: 100%;
-background-color: #80CE71;
-width: 70px;
-}
+  .colorbtn {
+    border-radius: 100%;
+    /* siyah beyaz cerceve */
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px black;
+    /* border: none; */
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .colorli {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  ul, li {
+    list-style: none;
+    list-style-type: none;
+  }
 </style>
