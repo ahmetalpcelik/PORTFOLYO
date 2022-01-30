@@ -14,7 +14,13 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5.1.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -52,13 +58,15 @@
           <div class="tweet d-flex">
             <span class="bi bi-twitter text-white mt-2 mr-3"></span>
             <div>
-              <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis explicabo inventore. <br> <a href="#">t.co/v82jsk</a></em></p>
+              <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut
+                  officiis explicabo inventore. <br> <a href="#">t.co/v82jsk</a></em></p>
             </div>
           </div>
         </div>
         <div class="col-md-4 d-none d-md-block">
           <h3>Hire Me</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiisexplicabo inventore. <br> <a href="#">myemail@gmail.com</a></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut
+            officiisexplicabo inventore. <br> <a href="#">myemail@gmail.com</a></p>
         </div>
       </div>
 
@@ -76,122 +84,285 @@
 
   <main id="main">
 
-    <section class="section">
+    <section class="section" style="margin-bottom: 100px;">
       <div class="container">
         <div class="row mb-4 align-items-center">
           <div class="col-md-6" data-aos="fade-up">
             <h2>Oh, I was born to ruffle feathers</h2>
-            <p>Deadly and precise, Xayah is a vastayan revolutionary waging a personal war to save her people. She uses her speed, guile, and feather blades to cut down anyone who stands in her way. Xayah fights alongside her partner and lover, Rakan.</p>
+            <p>Deadly and precise, Xayah is a vastayan revolutionary waging a personal war to save her people. She uses
+              her speed, guile, and feather blades to cut down anyone who stands in her way. Xayah fights alongside her
+              partner and lover, Rakan.</p>
           </div>
         </div>
       </div>
-      
+
       <div class="site-section pb-0">
         <div class="container">
           <div class="row align-items-stretch">
-            
-            <div class="col-md-7" data-aos="fade-up">
-              <img src="assets/img/xayah.jpg" alt="Image" class="img-fluid" style="max-width: 540px; max-height: 540px; min-width: 540px; min-height: 540px;">
-              
-            </div>
-<!-- ======= alt satırdaki kod resmin yanında yazı olmasını sağlıyor (sanırım) ======= -->
-            <div class="col-md-4 ml-auto" data-aos="fade-up" data-aos-delay="100">
- <div ="sticky-content">
-                <h3 class="h3">The Art is an explosion!</h3>
-                <p class="mb-4"><span class="text-muted">Design</span></p>
-                <div class="sketchfab-embed-wrapper"> <iframe class="modell" title="Xayah X Deidara Enamel Pin" frameborder="0" allowfullscreen
-                  mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
-                  xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
-                  src="https://sketchfab.com/models/46d7ec0dca6a435e8442f679c457de1b/embed"> </iframe>
+            <img class="bg-img" src="assets/img/xayah.jpg">
+            <div class="col-md-7 gallery" data-aos="fade-up"
+              style="display: flex; align-items: center; text-align: center; justify-content: center; flex-direction: column;">
+              <!-- Image Gallery with Bootstrap -->
+              <div class="well glass">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-interval="false"
+                  data-interval="false" style="border-radius: 20px; max-width: 400px; max-height: 400px;">
+                  <div class="carousel-inner">
+                    <div class="carousel-item first active" data-bs-interval="10000">
+                      <img src="assets/img/xayah.jpg" class="d-block w-100" id="zoomable-img"
+                        style="border-radius: 20px;">
+                    </div>
+                    <div class="carousel-item second">
+                      <div class="sketchfab-embed-wrapper d-block w-100"> <iframe class="modell"
+                          title="Xayah X Deidara Enamel Pin" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                          webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                          xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                          src="https://sketchfab.com/models/46d7ec0dca6a435e8442f679c457de1b/embed" alt="Third slide">
+                        </iframe>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev carousel-button" type="button"
+                    data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next carousel-button" type="button"
+                    data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
               </div>
-                <div class="mb-5">
-                  <p>Deidara is a member of the group Akatsuki, formed by the villains of the anime and manga series Naruto.
 
-He uses explosive clay as a weapon. He has a mouth in both hands. He places explosive clay with his hands and gives artistic shapes to clays.</p>
+
+              <!-- Previews -->
+              <div class="preview" style="position: relative">
+                <!-- Rounded switch -->
+                <label class="switch">
+                  <input type="checkbox" id="cbox">
+                  <span class="slider round"></span>
+                </label>
+                <!-- <img src="assets/img/xayah-small.jpg" class="first preview-img active" />
+                <img src="assets/img/3d.png" class="second preview-img" style="border-radius: 20px;" /> -->
+              </div>
+            </div>
+            <!-- ======= alt satırdaki kod resmin yanında yazı olmasını sağlıyor (sanırım) ======= -->
+            <div class="col-md-4 ml-auto" data-aos="fade-up" data-aos-delay="100">
+              <div>
+                <div class="img-zoom-container" style="visibility: hidden; top: 0; right: 50%; border-radius: 20px;">
+
+                  <div id="myresult" class="img-zoom-result" style="border-radius: 20px;"></div>
+                </div>
+                <div class="right-head">
+                  <div class="title">
+                    <h3 class="h3">The Art is an explosion!</h3>
+                    <p class="mb-4"><span class="text-muted">Design</span></p>
+                  </div>
+                  <div class="links">
+                    <p><a href="#" class="readmore instagram">View Instagram Post</a></p>
+                  </div>
+                </div>
+                <div class="mb-5">
+                  <p>Deidara is a member of the group Akatsuki, formed by the villains of the anime and manga series
+                    Naruto.
+
+                    He uses explosive clay as a weapon. He has a mouth in both hands. He places explosive clay with his
+                    hands and gives artistic shapes to clays.</p>
 
                 </div>
-
               </div>
-
-              <h4 class="h4 mb-3">Color Codes</h4>
-              <div class="colors">
-                <div class="first">
-                  <ul class="list-unstyled mb-5">
-                <div class="colorli"><button class="colorbtn" style="background-color: #ffcd42;" disabled></button><li>#ffcd42</li></div>
-                <div class="colorli"><button class="colorbtn" style="background-color: #272727;" disabled></button><li>#272727</li></div>
-                <div class="colorli"><button class="colorbtn" style="background-color: #444444;" disabled></button><li>#444444</li></div>
-                <div class="colorli"><button class="colorbtn" style="background-color: #bc7a2c;" disabled></button><li>#bc7a2c</li></div>
-                <div class="colorli"><button class="colorbtn" style="background-color: #ffe3cb;" disabled></button><li>#ffe3cb</li></div>
-                <div class="colorli"><button class="colorbtn" style="background-color: #bfbfbf;" disabled></button><li>#bfbfbf</li></div>
-              </ul>
+              <div class="color-codes glass">
+                <h4 class="h4 mb-3">Color Codes</h4>
+                <hr>
+                <div class="colors">
+                  <div class="first">
+                    <ul class="list-unstyled">
+                      <div class="colorli"><button class="colorbtn" style="background-color: #ffcd42;"
+                          disabled></button>
+                        <li>#ffcd42</li>
+                      </div>
+                      <div class="colorli"><button class="colorbtn" style="background-color: #272727;"
+                          disabled></button>
+                        <li>#272727</li>
+                      </div>
+                      <div class="colorli"><button class="colorbtn" style="background-color: #444444;"
+                          disabled></button>
+                        <li>#444444</li>
+                      </div>
+                      <div class="colorli"><button class="colorbtn" style="background-color: #bc7a2c;"
+                          disabled></button>
+                        <li>#bc7a2c</li>
+                      </div>
+                      <div class="colorli"><button class="colorbtn" style="background-color: #ffe3cb;"
+                          disabled></button>
+                        <li>#ffe3cb</li>
+                      </div>
+                      <div class="colorli"><button class="colorbtn" style="background-color: #bfbfbf;"
+                          disabled></button>
+                        <li>#bfbfbf</li>
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="second">
+                    <ul class="list-unstyled">
+                      <div class="colorli"><button class="colorbtn" style="background-color: #cdab9b;"
+                          disabled></button>
+                        <li>#cdab9b</li>
+                      </div>
+                      <div class="colorli"><button class="colorbtn" style="background-color: #ffffff;"
+                          disabled></button>
+                        <li>#ffffff</li>
+                      </div>
+                      <div class="colorli"><button class="colorbtn" style="background-color: #000000;"
+                          disabled></button>
+                        <li>#000000</li>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div class="second">
-                <ul class="list-unstyled mb-5">
-                  <div class="colorli"><button class="colorbtn" style="background-color: #cdab9b;" disabled></button><li>#cdab9b</li></div>
-                  <div class="colorli"><button class="colorbtn" style="background-color: #ffffff;" disabled></button><li>#ffffff</li></div>
-                  <div class="colorli"><button class="colorbtn" style="background-color: #000000;" disabled></button><li>#000000</li></div>
-                </ul>
-              </div>
+              <div class="circle1" style="z-index: -1;"></div>
+              <div class="circle2"></div>
 
-
-                
-              </div>
-              <p><a href="#" class="readmore">View Instagram Post</a></p>
             </div>
           </div>
         </div>
     </section>
 
 
+    <section class="others" style="margin-bottom: 200px;">
+      <div class="other-pins">
+        <div class="o-title mb-5" data-aos="fade-up" data-aos-delay="100">
+          <h3>Other Pins</h3>
+          <hr>
+        </div>
+        <div class="o-pins">
+          <div class="o-img" style="width: 100%;">
+            <div class="container">
+              <div class="no-gutter pin-gallery" data-aos="fade-up" data-aos-delay="200">
+                <div class="item design glass">
+                  <a href="jinx.html" class="item-wrap fancybox">
+                    <div class="work-info">
+                      <h3>Jinx</h3>
+                      <span>LoL X Naruto</span>
+                    </div>
+                    <img class="img-fluid" src="assets/img/Jinx.jpg" style="max-height: 200px; max-width: 200px;" />
+                  </a>
+                </div>
+                <div class="item design glass">
+                  <a href="Amumu.html" class="item-wrap fancybox">
+                    <div class="work-info">
+                      <h3>Amumu X Mitsuri</h3>
+                      <span>LoL X Naruto</span>
+                    </div>
+                    <img class="img-fluid" src="assets/img/Amumu.jpg" style="max-height: 200px; max-width: 200px;">
+                  </a>
+                </div>
+                <div class="item design glass">
+                  <a href="Caitlyn.html" class="item-wrap fancybox">
+                    <div class="work-info">
+                      <h3>Caitlyn X Kakshi</h3>
+                      <span>LoL X Naruto</span>
+                    </div>
+                    <img class="img-fluid" src="assets/img/cait.jpg" style="max-height: 200px; max-width: 200px;">
+                  </a>
+                </div>
+                <div class="item design glass">
+                  <a href="senna.html" class="item-wrap fancybox">
+                    <div class="work-info">
+                      <h3>Senna X Konan</h3>
+                      <span>LoL X Naruto</span>
+                    </div>
+                    <img class="img-fluid" src="assets/img/senna.jpg" style="max-height: 200px; max-width: 200px;">
+                  </a>
+                </div>
+                <div class="item design glass">
+                  <a href="ahri.html" class="item-wrap fancybox">
+                    <div class="work-info">
+                      <h3>Ahri X Itachi</h3>
+                      <span>LoL X Naruto</span>
+                    </div>
+                    <img class="img-fluid" src="assets/img/ahri.jpg" style="max-height: 200px; max-width: 200px;">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
 
-  <!-- ======= Footer ======= -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <p class="mb-1">&copy; Copyright MyPortfolio. All Rights Reserved</p>
-          <div class="credits">
-            <!--
+
+    <!-- ======= Footer ======= -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="mb-1">&copy; Copyright MyPortfolio. All Rights Reserved</p>
+            <div class="credits">
+              <!--
             All the links in the footer should remain intact.
             You can delete the links only if you purchased the pro version.
             Licensing information: https://bootstrapmade.com/license/
             Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
           -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+          <div class="col-sm-6 social text-md-end">
+            <a href="#"><span class="bi bi-twitter"></span></a>
+            <a href="#"><span class="bi bi-facebook"></span></a>
+            <a href="#"><span class="bi bi-instagram"></span></a>
+            <a href="#"><span class="bi bi-linkedin"></span></a>
           </div>
         </div>
-        <div class="col-sm-6 social text-md-end">
-          <a href="#"><span class="bi bi-twitter"></span></a>
-          <a href="#"><span class="bi bi-facebook"></span></a>
-          <a href="#"><span class="bi bi-instagram"></span></a>
-          <a href="#"><span class="bi bi-linkedin"></span></a>
-        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- Bootstrap 5.1.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 
 </html>
 
 <style>
+  .bg-img {
+    position: absolute;
+    opacity: 0.1;
+
+    width: auto;
+    height: auto;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+  }
+
   .colorbtn {
-    border-radius: 100%;
+    border-radius: 30px;
     /* siyah beyaz cerceve */
     border: 2px solid white;
     box-shadow: 0 0 0 2px black;
@@ -200,12 +371,15 @@ He uses explosive clay as a weapon. He has a mouth in both hands. He places expl
     height: 20px;
     margin-right: 10px;
   }
+
   .colorli {
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
   }
-  ul, li {
+
+  ul,
+  li {
     list-style: none;
     list-style-type: none;
   }
@@ -221,8 +395,391 @@ He uses explosive clay as a weapon. He has a mouth in both hands. He places expl
   }
 
   .modell {
-    width: 540px;
+    width: 400px;
     height: 400px;
-    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+
+  .well {
+    max-width: 520px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 2px rgb(143, 143, 143);
+  }
+
+  .carousel {
+    border-radius: 20px;
+  }
+
+  /* .gallery {
+    margin-left: 120px;
+  } */
+
+  .right-head {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .title {
+    margin-right: 20px;
+  }
+
+  .instagram {
+    border-radius: 20px;
+  }
+
+  .color-codes {
+    max-width: 520px;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0px 0px 2px rgb(143, 143, 143);
+  }
+
+  .preview {
+    margin-top: 20px;
+    display: flex;
+    max-width: fit-content;
+
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 5px;
+  }
+
+  .preview img {
+    height: 70px;
+    width: 70px;
+    flex-grow: 1;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+
+  .preview img:hover {
+    opacity: 1;
+  }
+
+  img.active {
+    opacity: 1;
+  }
+
+  .gallery {
+    margin-bottom: 40px;
+  }
+
+  .other-pins {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+
+  /* CSS Switch */
+  /* The switch - the box around the slider */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked+.slider {
+    background-color: #ffcd42;
+  }
+
+  input:focus+.slider {
+    box-shadow: 0 0 1px #ffcd42;
+  }
+
+  input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .pin-gallery {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 20px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .item {
+    margin: 0px 20px;
+    box-shadow: 0px 0px 2px rgb(143, 143, 143);
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 200px;
+    min-height: 200px
+  }
+
+  .item:hover {
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    transition: 500ms all;
+  }
+
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .img-zoom-container {
+    position: relative;
+  }
+
+  .img-zoom-lens {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    /*set the size of the lens:*/
+    width: 40px;
+    height: 40px;
+  }
+
+  .img-zoom-result {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    /*set the size of the result div:*/
+    width: 300px;
+    height: 300px;
+    z-index: 3;
+    box-shadow: 0px 0px 20px #ffcd42;
+  }
+
+  .glass {
+    background: #fff;
+    background: linear-gradient(to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(2rem);
+    z-index: 2;
+  }
+
+
+  .circle1 {
+    bottom: -10%;
+    left: 70%;
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .circle2 {
+    right: 200%;
+    bottom: -70%;
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .circle1,
+  .circle2 {
+    background: #fff;
+    background: linear-gradient(to right bottom,
+        rgba(255, 255, 255, 0.8),
+        #ffcd42);
+
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  /* Screen Sizes 1200px Below */
+  @media (max-width: 1200px) {
+    .colors {
+      flex-direction: column;
+    }
+
+    .first {
+      margin-right: 0px;
+    }
+  }
+
+  /* Screen Sizes 768px Below */
+  @media (max-width: 768px) {
+    .colors {
+      flex-direction: row;
+    }
+
+    .first {
+      margin-right: 120px;
+    }
+  }
+
+  /* Screen Sizes 430px Below */
+  @media (max-width: 430px) {
+
+    .first {
+      margin-right: 70px;
+    }
+  }
+
+
+  /* Screen Sizes 365px Below */
+  @media (max-width: 365px) {
+
+    .colors {
+      flex-direction: column;
+    }
+
+    .first {
+      margin-right: 0px;
+    }
   }
 </style>
+<script>
+  function imageGallery() {
+    const switchBtn = document.getElementById("cbox");
+    const buttons = document.querySelectorAll(".carousel-button")
+
+    switchBtn.addEventListener("change", function () {
+      buttons[1].click()
+      if (switchBtn.checked) {
+        switchBtn.checked = false
+      } else {
+        switchBtn.checked = true
+      }
+    });
+
+    buttons.forEach(function (b) {
+      b.addEventListener("click", function () {
+        console.log("a")
+        if (switchBtn.checked) {
+          switchBtn.checked = false
+        } else {
+          switchBtn.checked = true
+        }
+      })
+    })
+  }
+
+  imageGallery();
+
+  function imageZoom(imgID, resultID) {
+    var img, lens, result, cx, cy;
+    img = document.getElementById(imgID);
+    result = document.getElementById(resultID);
+    /* Create lens: */
+    lens = document.createElement("DIV");
+    lens.setAttribute("class", "img-zoom-lens");
+    lens.style.visibility = "hidden"
+    /* Insert lens: */
+    img.parentElement.insertBefore(lens, img);
+    /* Calculate the ratio between result DIV and lens: */
+    cx = result.offsetWidth / lens.offsetWidth;
+    cy = result.offsetHeight / lens.offsetHeight;
+    /* Set background properties for the result DIV */
+    result.style.backgroundImage = "url('" + img.src + "')";
+    result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+    /* Execute a function when someone moves the cursor over the image, or the lens: */
+    lens.addEventListener("mousemove", moveLens);
+    img.addEventListener("mousemove", moveLens);
+
+    lens.addEventListener("mouseenter", show)
+    img.addEventListener("mouseenter", show)
+    lens.addEventListener("mouseout", hid)
+    img.addEventListener("mouseout", hid)
+
+    function hid() {
+      result = document.getElementById(resultID);
+      result.style.visibility = "hidden"
+      lens = document.querySelector(".img-zoom-lens");
+      lens.style.visibility = "hidden"
+    }
+    function show() {
+      result = document.getElementById(resultID);
+      result.style.visibility = "visible"
+      lens = document.querySelector(".img-zoom-lens");
+      lens.style.visibility = "visible"
+    }
+
+    ;
+    /* And also for touch screens: */
+    lens.addEventListener("touchmove", moveLens);
+    img.addEventListener("touchmove", moveLens);
+    function moveLens(e) {
+      var pos, x, y;
+      /* Prevent any other actions that may occur when moving over the image */
+      e.preventDefault();
+      /* Get the cursor's x and y positions: */
+      pos = getCursorPos(e);
+      /* Calculate the position of the lens: */
+      x = pos.x - (lens.offsetWidth / 2);
+      y = pos.y - (lens.offsetHeight / 2);
+      /* Prevent the lens from being positioned outside the image: */
+      if (x > img.width - lens.offsetWidth) { x = img.width - lens.offsetWidth; }
+      if (x < 0) { x = 0; }
+      if (y > img.height - lens.offsetHeight) { y = img.height - lens.offsetHeight; }
+      if (y < 0) { y = 0; }
+      /* Set the position of the lens: */
+      lens.style.left = x + "px";
+      lens.style.top = y + "px";
+      /* Display what the lens "sees": */
+      result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+    }
+    function getCursorPos(e) {
+      var a, x = 0, y = 0;
+      e = e || window.event;
+      /* Get the x and y positions of the image: */
+      a = img.getBoundingClientRect();
+      /* Calculate the cursor's x and y coordinates, relative to the image: */
+      x = e.pageX - a.left;
+      y = e.pageY - a.top;
+      /* Consider any page scrolling: */
+      x = x - window.pageXOffset;
+      y = y - window.pageYOffset;
+      return { x: x, y: y };
+    }
+  }
+
+  imageZoom("zoomable-img", "myresult");
+</script>
